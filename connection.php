@@ -46,7 +46,7 @@ class Database {
       private $dbname = "d94p093ub1nn2g";
       private $port = "5432";
 
-      try{
+      try {
         //Set DSN data source name
           $dsn = "pgsql:host=" . $host . ";port=" . $port .";dbname=" . $dbname . ";user=" . $user . ";password=" . $password . ";";
 
