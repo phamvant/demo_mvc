@@ -18,9 +18,9 @@ class Database {
 //     private $dbname = 'd94p093ub1nn2g';
    
 //     //Will be the PDO object
-//     private $dbh;
-//     private $stmt;
-//     private $error;
+    private $dbh;
+    private $stmt;
+    private $error;
 
 //     public function __construct(){
 //         //Set DSN
