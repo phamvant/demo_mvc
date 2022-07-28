@@ -13,7 +13,7 @@ class Database {
 //     private $dbname = 'demo_mvc';
 
     private $host = 'ec2-100-26-39-41.compute-1.amazonaws.com';
-    private $user = 'ciivviqcqmjhun'
+    private $user = 'ciivviqcqmjhun';
     private $pass = '1937b5c3d8aa839b4dbf6bbf1303b64b8e602beb58cbafc5082e2d303d1307f5';
     private $dbname = 'd94p093ub1nn2g';
    
