@@ -7,7 +7,6 @@
     * Return rows and results
 */
 class Database {
-<<<<<<< HEAD
     // private $host = 'localhost';
     // private $user = 'root';
     // private $pass = '1';
@@ -17,17 +16,7 @@ class Database {
     private $user = 'ciivviqcqmjhun';
     private $pass = '1937b5c3d8aa839b4dbf6bbf1303b64b8e602beb58cbafc5082e2d303d1307f5';
     private $dbname = 'd94p093ub1nn2g';
-=======
-//     private $host = 'localhost';
-//     private $user = 'root';
-//     private $pass = '1';
-//     private $dbname = 'demo_mvc';
->>>>>>> 736f9becb5e1d22259b9bb03a48cf3d39b4eb727
-
-    private $host = 'ec2-100-26-39-41.compute-1.amazonaws.com';
-    private $user = 'ciivviqcqmjhun';
-    private $pass = '1937b5c3d8aa839b4dbf6bbf1303b64b8e602beb58cbafc5082e2d303d1307f5';
-    private $dbname = 'd94p093ub1nn2g';
+    private $port = '5432';
    
     //Will be the PDO object
     private $dbh;
@@ -36,7 +25,8 @@ class Database {
 
     public function __construct(){
         //Set DSN
-        $dsn = 'mysql:host='.$this->host.';dbname='.$this->dbname;
+        $dsn = "pgsql:host=" . $host . ";port=" . $port .";dbname=" . $dbname . ";user=" . $user . ";password=" . $password . ";";
+        // $dsn = 'mysql:host='.$this->host.';dbname='.$this->dbname;
         $options = array(
             PDO::ATTR_PERSISTENT => true,
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
