@@ -18,7 +18,7 @@ include_once './helpers/session_helper.php';
   </svg>
   <!--<span>Voir mes réalisations</span>-->
     <!-- <span>Welcome in my world</span> -->
-    <span id="index-text">Welcome, <?php if(isset($_SESSION['usersId'])){
+    <span id="index-text">Welcome! <?php if(isset($_SESSION['usersId'])){
         echo explode(" ", $_SESSION['usersName'])[0];
     }else{
         echo 'Guest';
