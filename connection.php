@@ -7,6 +7,7 @@
     * Return rows and results
 */
 class Database {
+<<<<<<< HEAD
     // private $host = 'localhost';
     // private $user = 'root';
     // private $pass = '1';
@@ -16,7 +17,18 @@ class Database {
     private $user = 'ciivviqcqmjhun';
     private $pass = '1937b5c3d8aa839b4dbf6bbf1303b64b8e602beb58cbafc5082e2d303d1307f5';
     private $dbname = 'd94p093ub1nn2g';
+=======
+//     private $host = 'localhost';
+//     private $user = 'root';
+//     private $pass = '1';
+//     private $dbname = 'demo_mvc';
+>>>>>>> 736f9becb5e1d22259b9bb03a48cf3d39b4eb727
 
+    private $host = 'ec2-100-26-39-41.compute-1.amazonaws.com';
+    private $user = 'ciivviqcqmjhun';
+    private $pass = '1937b5c3d8aa839b4dbf6bbf1303b64b8e602beb58cbafc5082e2d303d1307f5';
+    private $dbname = 'd94p093ub1nn2g';
+   
     //Will be the PDO object
     private $dbh;
     private $stmt;
@@ -38,7 +50,7 @@ class Database {
             echo $this->error;
         }
     }
-
+   
     //Prepare statement with query
     public function query($sql){
         $this->stmt = $this->dbh->prepare($sql);
