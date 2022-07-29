@@ -19,7 +19,7 @@ include_once './helpers/session_helper.php';
   <!--<span>Voir mes réalisations</span>-->
     <!-- <span>Welcome in my world</span> -->
 <<<<<<< HEAD
-    <span id="index-text">Welcome! <?php if(isset($_SESSION['usersId'])){
+    <span id="index-text">Welcome <?php if(isset($_SESSION['usersId'])){
 =======
     <span id="index-text">Welcome <?php if(isset($_SESSION['usersId'])){
 >>>>>>> 736f9becb5e1d22259b9bb03a48cf3d39b4eb727
